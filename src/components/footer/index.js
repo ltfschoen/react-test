@@ -6,9 +6,10 @@ export default class Footer extends Component{
 	}
 
 	render(){
+		let {poweredBy} = this.props;
 		return (
 			<footer className='pure-u-1-1'>
-				<p>Powered by LuLu</p>
+				<p>Powered by {poweredBy}</p>
 			</footer>
 		)
 	}

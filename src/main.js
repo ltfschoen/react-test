@@ -1,5 +1,6 @@
 import './style.scss';
 import React, {PropType} from 'react';
+import config from './config';
 import ReactDOM from 'react-dom';
 import Layout from './components/layout';
 import Header from './components/header';
@@ -25,7 +26,7 @@ class App extends React.Component{
 						</Content>
 					</div>
 				</div>
-				<Footer />
+				<Footer poweredBy={config.poweredBy}/>
 			</Layout>			
 		)
 	}
@@ -33,6 +34,6 @@ class App extends React.Component{
 
 
 ReactDOM.render(
-	<App name={'lulu'}/>,
+	<App />,
 	document.getElementById('root')
 );
