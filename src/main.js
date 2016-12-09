@@ -1,9 +1,11 @@
+import './style.scss';
 import React, {PropType} from 'react';
 import ReactDOM from 'react-dom';
-
-// function App(props){
-// 	return (<div>Rending ...</div>)
-// }
+import Layout from './components/layout';
+import Header from './components/header';
+import Footer from './components/footer';
+import Aside from './components/aside';
+import Content from './components/content';
 
 class App extends React.Component{
 	constructor(props){
@@ -11,10 +13,26 @@ class App extends React.Component{
 	}
 	render(){
 		return (
-			<div>{this.props.name} Render...</div>
+			<Layout>
+				<Header />
+				<div className='main'>
+					<div className='pure-g'>
+						<Aside>
+							<p>aside</p>
+						</Aside>
+						<Content>
+							<p>content</p>
+						</Content>
+					</div>
+				</div>
+				<Footer />
+			</Layout>			
 		)
 	}
 }
 
 
-ReactDOM.render(<App name={'lulu'}/>, document.getElementById('root'));
+ReactDOM.render(
+	<App name={'lulu'}/>,
+	document.getElementById('root')
+);

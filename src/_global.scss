@@ -1,0 +1,20 @@
+body,html{
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+body{
+	background-color: $bg-color;
+}
+
+hr{
+	border-top-color: darken($bg-color,1%);
+	color: darken($bg-color,1%);
+	opacity: .3;
+	border-bottom-color: transparent;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 10px;
+}

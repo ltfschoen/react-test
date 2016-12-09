@@ -1,0 +1,12 @@
+footer{
+	padding-top: $footer-v-padding;
+	padding-bottom: $footer-v-padding;
+	background-color: $footer-bg;
+	box-sizing: border-box;
+	
+	p{
+		margin-bottom: 0;
+		font-size: $footer-text-size;
+		color: lighten($footer-bg,30%);
+	}
+}

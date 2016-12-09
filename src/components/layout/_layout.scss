@@ -1,0 +1,21 @@
+.main,
+header,
+footer{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: $gutter;
+	padding-right: $gutter;
+}
+
+header{
+	height: $header-height;
+}
+
+footer{
+	height: $footer-height;
+}
+
+.main{
+	height: calc(100% - #{$header-height + $footer-height});
+	overflow-y : auto;
+}
