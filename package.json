@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "node_modules/.bin/_mocha test/helpers/browser.js test/**/*-test.js",
     "start": "node_modules/.bin/webpack-dev-server --hot --inline",
     "build": "node_modules/.bin/webpack -p"
   },
