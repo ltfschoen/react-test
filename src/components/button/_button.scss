@@ -1,0 +1,15 @@
+.button{
+	border-radius: 7px;
+	display: inline-block;
+	padding: 15px 30px;
+	outline: none;
+	background-color: transparent;
+	border: 1px solid #333;
+	transition: all .5s ease;
+	color: #000;
+	&:hover{
+		background-color: #777;
+		border-color: #777;
+		color: #fff;
+	}
+}
