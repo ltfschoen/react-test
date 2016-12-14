@@ -15,7 +15,7 @@ export default class Button extends Component{
 	}
 	componentWillReceiveProps(nextProps) {
 		this.setState({
-			counter : this.nextProps.hasBeenClicked
+			counter : nextProps.hasBeenClicked
 		})		
 	}
 	onButtonClick(){
