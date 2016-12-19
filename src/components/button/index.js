@@ -19,9 +19,12 @@ export default class Button extends Component{
 		})		
 	}
 	onButtonClick(){
-		this.setState({
-			counter : ++this.state.counter
-		})
+		//setTimeout(function(){
+			this.setState({
+				counter : ++this.state.counter
+			})	
+		//}.bind(this),1000);
+		
 	}
 	render(){
 		return (
