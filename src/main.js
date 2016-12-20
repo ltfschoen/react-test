@@ -7,6 +7,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Aside from './components/aside';
 import Content from './components/content';
+import ClickCounter from './components/clickCounter';
 
 class App extends React.Component{
 	constructor(props){
@@ -20,6 +21,9 @@ class App extends React.Component{
 					<div className='pure-g'>
 						<Aside>
 							<p>aside</p>
+							<div className='pure-u-1'>
+								<ClickCounter />
+							</div>
 						</Aside>
 						<Content>
 							<p>content</p>
