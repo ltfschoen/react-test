@@ -6,8 +6,8 @@ import Button from '../../../src/components/button';
 
 
 let hasBeenClickedInital=5;
-const buttonMonted= mount(<Button hasBeenClicked={hasBeenClickedInital}/>);
-let buttonShallowed= shallow(<Button hasBeenClicked={hasBeenClickedInital}/>);
+const buttonMonted= mount(<Button hasBeenClicked={hasBeenClickedInital} onClickHandler={() => {}} />);
+let buttonShallowed= shallow(<Button hasBeenClicked={hasBeenClickedInital} onClickHandler={() => {}} />);
 
 describe("Button ", function() {
 
